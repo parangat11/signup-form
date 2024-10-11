@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.webpage {
+    display: flex;
+}
+
+.image-sidebar a {
+    color: white;
+}
+
+.image-sidebar {
+    position: relative;
+    background-image: url("./images/ring.jpg");
+    width: 40%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.image-credits {
+    color: white;
+    font-size: 25px;
+}
