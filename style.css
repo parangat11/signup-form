@@ -1,3 +1,8 @@
+@font-face {
+  font-family: nordic-font;
+  src: url(./font/Norse-Bold.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +27,25 @@
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
+}
+
+.site-name {
+    position: absolute;
+    top: 30vh;
+    display: flex;
+    padding: 20px;
+    background-color: black;
+    background: rgba(39, 33, 33, 0.7);
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.site-name p {
+    color: white;
+    font-size: 150px;
+    font-family: nordic-font;
 }
 
 .image-credits {
