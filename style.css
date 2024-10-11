@@ -34,9 +34,10 @@
     top: 30vh;
     display: flex;
     padding: 20px;
+    margin: 0;
+    justify-content: center;
     background-color: black;
     background: rgba(39, 33, 33, 0.7);
-    justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
     width: 100%;
@@ -44,11 +45,15 @@
 
 .site-name p {
     color: white;
-    font-size: 150px;
+    font-size: 10rem;
     font-family: nordic-font;
+}
+
+.site-name img {
+    height: 14rem;
 }
 
 .image-credits {
     color: white;
-    font-size: 25px;
+    font-size: 2rem;
 }
