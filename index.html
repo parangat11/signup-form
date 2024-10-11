@@ -23,47 +23,41 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit reiciendis deserunt.</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <form action="#" method="post">
+            <div class="form-content">
+                <form action="#" method="post">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, laborum.
-                <div class="form-content">
                     <div class="name">
                         <div class="first-name">
                             <label for="first-name">*First Name</label>
-                            <br>
                             <input type="text" id="first-name" name="first_name">
                         </div>
                         <div class="last-name">
                             <label for="last-name">Last Name</label>
-                            <br>
                             <input type="text" id="last-name" name="last_name">
                         </div>
                     </div>
                     <div class="credentials">
                         <div class="mail">
                             <label for="email">*Email</label>
-                            <br>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="phone">
                             <label for="phone">Phone Number</label>
-                            <br>
                             <input type="tel" id="phone" name="phone_number">
                         </div>
                     </div>
                     <div class="pw">
                         <div class="pass">
                             <label for="password">*Password</label>
-                            <br>
-                            <input type="password" id="password" name="passsword" required>
+                            <input type="password" id="password" name="passsword" minlength="8" maxlength="15" required>
                         </div>
                         <div class="confirm-pass">
                             <label for="conf-password">*Confirm Password</label>
-                            <br>
-                            <input type="password" id="conf-password" name="conf_password" required>
+                            <input type="password" id="conf-password" name="conf_password" minlength="8" maxlength="15" required>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
             <div class="create-account">
                 <button type="button">Create Account</button>
             </div>

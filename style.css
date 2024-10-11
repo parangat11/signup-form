@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    --content-left-padding: 40px;
 }
 
 .webpage {
@@ -19,7 +20,7 @@
 .image-sidebar {
     position: relative;
     background-image: url("./images/ring.jpg");
-    width: 40%;
+    width: 40vw;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,5 +58,64 @@
 
 .image-credits {
     color: white;
-    font-size: clamp(15px, 14rem, 26px);
+    font-size: 1.5rem;
+}
+
+#password:invalid {
+    border: 2px solid red;
+}
+
+#conf-password:invalid {
+    border: 2px solid red;
+}
+
+
+.content {
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 20px;
+}
+
+.description {
+    padding-left: var(--content-left-padding);
+}
+
+form {
+    width: 60vw;
+    padding: 40px;
+    padding-left: var(--content-left-padding);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.name, .credentials, .pw {
+    display: flex;
+    justify-content: left;
+    gap: 15vw;
+}
+
+form > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div > div > input {
+    font-size: 2rem;
+}
+
+.create-account, .old-user {
+    padding-left: var(--content-left-padding);
+}
+
+button {
+    font-size: 2rem;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 0;
+    background-color: rgb(247, 186, 110);
+    border-radius: 10px;
 }
