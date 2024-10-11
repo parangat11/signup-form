@@ -45,15 +45,17 @@
 
 .site-name p {
     color: white;
-    font-size: 10rem;
+    font-size: clamp(100px, 15vh, 150px);
     font-family: nordic-font;
 }
 
 .site-name img {
-    height: 4rem;
+    box-sizing: border-box;
+    height: clamp(100px, 15vh, 150px);
+    width: auto;
 }
 
 .image-credits {
     color: white;
-    font-size: 2rem;
+    font-size: clamp(15px, 14rem, 26px);
 }
